@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Wavelet {
-    int t0;
-    int dt;
-    int nt;
-    List<Double> time;
-    List<Double> trace;
+    protected int t0;
+    protected int dt;
+    protected int nt;
+    protected List<Double> time;
+    protected List<Double> trace;
 
     public Wavelet() {
 
