@@ -29,10 +29,16 @@ public class Spectrum {
         Fft.transform(real, imag);
 
         double denominator = wavelet.getDt() * 0.001 * nfft;
+        double specMax = -1;
         for (int i = 0; i < nf; i++) {
             freq.add(i / denominator);
-            trace.add(Math.sqrt(real[i] * real[i] + imag[i] * imag[i]));
+            double spec_db = 20 * Math.log10(Math.sqrt(real[i] * real[i] + imag[i] * imag[i]));
+            trace.add(spec_db);
+            specMax = Math.max(specMax, spec_db);
         }
+
+        for (int i = 0; i < nf; i++)
+            trace.set(i, trace.get(i) - specMax);
     }
 
     public int getNf() {
@@ -68,3 +74,4 @@ public class Spectrum {
                 '}';
     }
 }
+
