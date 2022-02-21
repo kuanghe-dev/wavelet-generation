@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.kuanghe_dev</groupId>
 	<artifactId>wavelet-generation</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>wavelet-generation</name>
 	<description>Wavelet generation services</description>
 	<properties>
@@ -43,6 +43,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
+		<finalName>wavelet-generation-app</finalName>
 	</build>
 
 </project>
