@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.kuanghe_dev</groupId>
 	<artifactId>wavelet-generation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>wavelet-generation</name>
 	<description>Wavelet generation services</description>
 	<properties>
