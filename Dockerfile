@@ -8,5 +8,6 @@ WORKDIR /usr/local/bin
 
 ADD target/wavelet-generation-app.jar .
 
-ENTRYPOINT ["java", "-jar", "target/wavelet-generation-app.jar"]
+ENTRYPOINT ["java", "-jar", "wavelet-generation-app.jar"]
 
+EXPOSE 8080
